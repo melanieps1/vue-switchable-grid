@@ -17,6 +17,19 @@
 			<a href="#" v-bind:class="{ 'active': layout == 'list' }" v-on:click="layout = 'list'"><i class="fa fa-list fa-2x" aria-hidden="true"></i></a>
 		</div>
 
+		<ul class="grid" v-if="layout == 'grid'">
+			<li v-for="cat in cats">
+				<a v-bind:href="cat"><img v-bind:src="cat"></a>
+			</li>
+		</ul>
+		
+		<ul class="list"  v-if="layout == 'list'">
+			<li v-for="cat in cats">
+				<a v-bind:href="cat"><img v-bind:src="cat"></a>
+				<p>{{ cat }}</p>
+			</li>
+		</ul>
+
 	</div>
 
 	<script src="https://unpkg.com/vue"></script>

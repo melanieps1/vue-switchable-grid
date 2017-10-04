@@ -9,12 +9,15 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
 h1 {
 	padding: 24px 0 0;
 	text-align: center;
 }
+
+/* Menu Bar */
 
 .bar {
 	background-color: #5c9bb7;
@@ -40,4 +43,45 @@ h1 {
 
 .bar a.active {
 	color: #b3ff59;
+}
+
+/* Grid View */
+
+ul.grid {
+	columns: 2;
+	list-style: none;
+	margin: 0 auto;
+	width: 570px;
+}
+
+ul.grid li img {
+	height: 280px;
+	object-fit: cover;
+	width: 280px;
+}
+
+/* List View */
+
+ul.list {
+	list-style: none;
+	margin: 0 auto;
+	width: 500px;
+	text-align: left;
+}
+
+ul.list li {
+	overflow: hidden;
+	padding: 10px;
+}
+
+ul.list li p {
+	display: block;
+	margin-left: 135px;
+}
+
+ul.list li a img {
+	float: left;
+	height: 120px;
+	object-fit: cover;
+	width: 120px;
 }

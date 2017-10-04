@@ -16,6 +16,7 @@ var demo = new Vue({
 		// console.log(this.cats); <-- can still access the global var 'cats'
 		var self = this;
 
+		// Axios is a popular package to fetch from a URL https://github.com/axios/axios
 		axios.get("http://thecatapi.com/api/images/get?format=xml&results_per_page=6")
 			// `.then` is a promise to return these things in order
 			.then(function (response) {
