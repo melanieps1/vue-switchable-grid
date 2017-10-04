@@ -1,0 +1,43 @@
+[v-cloak] {
+	display: none;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	padding: 24px 0 0;
+	text-align: center;
+}
+
+.bar {
+	background-color: #5c9bb7;
+	margin: 45px auto 25px;
+	padding: 10px;
+	position: relative;
+	text-align: right;
+	width: 580px;
+}
+
+.bar a {
+	color: white;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 3px;
+	text-decoration: none;
+}
+
+.bar a:hover {
+	color: #ccc;
+}
+
+.bar a.active {
+	color: #c14694;
+}
